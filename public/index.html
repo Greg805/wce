@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WhatComEvent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <!-- Set the base href -->
+    <script>document.write('<base href="' + document.location + '" />');</script>
+
+    <!-- 1. Load libraries -->   
+  	<script src="core/es6-shim.min.js"></script>
+    <script src="core/system-polyfills.js"></script>   
+    <script src="core/angular2-polyfills.js"></script>
+    <script src="core/system.js"></script>
+    <script src="core/typescript.js"></script>
+    <script src="core/Rx.js"></script>
+    <script src="core/angular2.dev.js"></script> 
+    <script src="core/router.dev.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({ 
+        transpiler: 'typescript', 
+        typescriptOptions: { emitDecoratorMetadata: true }, 
+        packages: {'app': {defaultExtension: 'ts'}}
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <app>Loading...</app>
+  </body>
+
+</html>

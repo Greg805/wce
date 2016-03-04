@@ -1,0 +1,25 @@
+#logo{
+    float:left;
+    width: 50px;
+    height:50px;
+}
+
+#content{
+    padding-top:20px;
+    padding-left:50px;
+}
+
+.title{
+    font-family: Tahoma, sans-serif;
+    color: #006699;
+}
+
+.lk{
+    font-size:14px;
+    font-family: Tahoma, sans-serif;
+    color: #006699;
+}
+
+.events{
+    float:left;
+}

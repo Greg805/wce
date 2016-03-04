@@ -1,0 +1,26 @@
+{
+  "name": "node-wce",
+  "version": "0.0.1",
+  "description": "WhatComEvent",
+
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+  },
+  
+  "dependencies": {
+	"express"         : "~4.7.2",
+    "pg"   		      : "~4.4.6",
+    "morgan"          : "~1.2.2",
+    "body-parser"     : "~1.5.2",
+    "method-override" : "2.1.2"	,	
+	"angular2"        : "2.0.0-beta.7",
+    "es6-promise"     : "3.0.2",
+    "es6-shim"        : "0.33.3",
+    "reflect-metadata": "0.1.2",
+    "zone.js"         : "0.5.15",
+	"bootstrap"       : "3.3.6"
+  }
+}
